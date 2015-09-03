@@ -133,7 +133,7 @@ for p in unusedFile:
 
 filePath = os.path.split(projectPath)[0]
 writePath = '%s/未使用的类.txt' % filePath
-f = open(writePath,'w')
+f = open(writePath,'w+')
 f.writelines(writeFile)
 f.close()
 
